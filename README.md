@@ -1,5 +1,7 @@
 # Specwise MCP server
 
+<!-- mcp-name: io.github.hybridforgelab/specwise-mcp -->
+
 Let your coding agent check an API contract: validate an OpenAPI document, find the breaking changes between two versions (also against git), and validate JSON Schemas and data.
 
 The server is open source (MIT). It calls the [Specwise API](https://specwise.hybridforgelab.com), which is paid, with a free plan.
