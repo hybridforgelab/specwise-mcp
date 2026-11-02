@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.hybridforgelab/specwise-mcp",
+  "description": "OpenAPI and JSON Schema validation and OpenAPI breaking-change diffs for AI agents.",
+  "repository": {
+    "url": "https://github.com/hybridforgelab/specwise-mcp",
+    "source": "github",
+    "id": "1440329457"
+  },
+  "websiteUrl": "https://specwise.hybridforgelab.com/integration.html#mcp-server",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "hybridforgelab-specwise-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RAPIDAPI_KEY",
+          "description": "Your RapidAPI key",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "API_MARKET_KEY",
+          "description": "Your api.market key, used when RAPIDAPI_KEY is not set",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "HFL_MARKETPLACE",
+          "description": "rapidapi or apimarket, when both keys are set",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "choices": [
+            "rapidapi",
+            "apimarket"
+          ]
+        }
+      ]
+    }
+  ]
+}
