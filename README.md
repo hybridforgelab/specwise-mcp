@@ -3,6 +3,10 @@
 <!-- mcp-name: io.github.hybridforgelab/specwise-mcp -->
 
 [![M8ven Score](https://m8ven.ai/badge/mcp/hybridforgelab/specwise-mcp?variant=verified)](https://m8ven.ai/mcp/hybridforgelab/specwise-mcp?s=readme)
+[![CI](https://github.com/hybridforgelab/specwise-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/hybridforgelab/specwise-mcp/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/hybridforgelab-specwise-mcp)](https://pypi.org/project/hybridforgelab-specwise-mcp/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://pypi.org/project/hybridforgelab-specwise-mcp/)
+[![License: MIT](https://img.shields.io/github/license/hybridforgelab/specwise-mcp)](LICENSE)
 
 Let your coding agent check an API contract: validate an OpenAPI document, find the breaking changes between two versions (also against git), and validate JSON Schemas and data.
 
@@ -52,6 +56,10 @@ claude mcp add specwise --env RAPIDAPI_KEY=your-rapidapi-key -- uvx --from hybri
 | `HFL_MARKETPLACE` | `rapidapi` or `apimarket`, when both keys are set |
 
 Without a key the server still starts. The first tool call then explains where to get one.
+
+Also listed on Glama:
+
+[![specwise-mcp on Glama](https://glama.ai/mcp/servers/hybridforgelab/specwise-mcp/badge)](https://glama.ai/mcp/servers/hybridforgelab/specwise-mcp)
 
 ## 3. Tools
 
