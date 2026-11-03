@@ -8,12 +8,12 @@
     "id": "1440329457"
   },
   "websiteUrl": "https://specwise.hybridforgelab.com/integration.html#mcp-server",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "hybridforgelab-specwise-mcp",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
