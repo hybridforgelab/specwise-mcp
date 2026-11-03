@@ -27,7 +27,7 @@ server = MCPServer(
     website_url="https://specwise.hybridforgelab.com",
 )
 
-READ_ONLY = ToolAnnotations(read_only_hint=True, open_world_hint=True)
+READ_ONLY = ToolAnnotations(read_only_hint=True, destructive_hint=False, idempotent_hint=True, open_world_hint=True)
 
 
 # MCP clients may send JSON documents as objects, and the SDK parses JSON-looking strings into objects too.
