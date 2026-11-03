@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hybridforgelab/specwise-mcp/compare/hybridforgelab-specwise-mcp-v0.2.0...hybridforgelab-specwise-mcp-v0.2.1) (2026-11-03)
+
+
+### Bug Fixes
+
+* declare all four tool hints ([#7](https://github.com/hybridforgelab/specwise-mcp/issues/7)) ([887b3cc](https://github.com/hybridforgelab/specwise-mcp/commit/887b3cc836d8cb215eef39a36521f92de3dd6094))
+
 ## [0.2.0](https://github.com/hybridforgelab/specwise-mcp/compare/hybridforgelab-specwise-mcp-v0.1.0...hybridforgelab-specwise-mcp-v0.2.0) (2026-11-02)
 
 
