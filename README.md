@@ -20,7 +20,7 @@ The server is open source (MIT). It calls the [Specwise API](https://specwise.hy
 
 | marketplace | |
 |---|---|
-| RapidAPI | [plans](https://rapidapi.com/hybrid-forge-lab-hybrid-forge-lab-default/api/specwise-openapi-validator-and-diff-api/pricing) |
+| RapidAPI | [plans](https://rapidapi.com/bytestay-bytestay-default/api/specwise-openapi-validator-and-diff-api/pricing) |
 | api.market | [store](https://api.market/store/hybrid-forge-lab/specwise) |
 
 ## 2. Add the server to your MCP client
