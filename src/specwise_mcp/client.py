@@ -11,7 +11,7 @@ from mcp.server.mcpserver.exceptions import ToolError
 
 from . import __version__
 
-RAPIDAPI_LISTING = "https://rapidapi.com/hybrid-forge-lab-hybrid-forge-lab-default/api/"
+RAPIDAPI_LISTING = "https://rapidapi.com/bytestay-bytestay-default/api/"
 APIMARKET_BASE = "https://prod.api.market/api/v1/hybrid-forge-lab/"
 APIMARKET_STORE = "https://api.market/store/hybrid-forge-lab/"
 USER_AGENT = f"specwise-mcp/{__version__} (+https://specwise.hybridforgelab.com)"
