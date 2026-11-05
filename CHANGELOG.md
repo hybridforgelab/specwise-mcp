@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.3](https://github.com/hybridforgelab/specwise-mcp/compare/hybridforgelab-specwise-mcp-v0.2.2...hybridforgelab-specwise-mcp-v0.2.3) (2026-11-05)
+
+
+### Bug Fixes
+
+* point api.market links at the bytestay store slug ([#15](https://github.com/hybridforgelab/specwise-mcp/issues/15)) ([bd5a878](https://github.com/hybridforgelab/specwise-mcp/commit/bd5a8783209114a912347255adeb9de49a4a8fad))
+* point the RapidAPI listing links at the ByteStay org ([#14](https://github.com/hybridforgelab/specwise-mcp/issues/14)) ([700beae](https://github.com/hybridforgelab/specwise-mcp/commit/700beaebd63e126e6d8db79a4730bb386cd2a72e))
+
+
+### Documentation
+
+* README badges ([#12](https://github.com/hybridforgelab/specwise-mcp/issues/12)) ([b62323f](https://github.com/hybridforgelab/specwise-mcp/commit/b62323f5e4e500b387467a4ef5ce6b7d94c65c8f))
+
 ## [0.2.2](https://github.com/hybridforgelab/specwise-mcp/compare/hybridforgelab-specwise-mcp-v0.2.1...hybridforgelab-specwise-mcp-v0.2.2) (2026-11-03)
 
 

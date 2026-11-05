@@ -1,6 +1,6 @@
 [project]
 name = "hybridforgelab-specwise-mcp"
-version = "0.2.2"
+version = "0.2.3"
 description = "OpenAPI validation and breaking-change diffs (also against a git ref) and JSON Schema validation for coding agents. Bring your own RapidAPI or api.market key."
 readme = "README.md"
 license = "MIT"
