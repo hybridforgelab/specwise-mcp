@@ -29,7 +29,7 @@ def test_env_is_read_from_os_by_default(monkeypatch):
 
 def test_apimarket_when_only_its_key_is_set_or_chosen():
     t = target(P, {"API_MARKET_KEY": "mk"})
-    assert t.market == "apimarket" and t.base == "https://prod.api.market/api/v1/hybrid-forge-lab/specwise"
+    assert t.market == "apimarket" and t.base == "https://prod.api.market/api/v1/bytestay/specwise"
     assert t.headers == {"x-api-market-key": "mk"}
     assert target(P, {"RAPIDAPI_KEY": "rk", "API_MARKET_KEY": "mk", "HFL_MARKETPLACE": "apimarket"}).market == "apimarket"
     assert target(P, {"RAPIDAPI_KEY": "rk", "API_MARKET_KEY": "mk"}).market == "rapidapi"
@@ -47,7 +47,7 @@ async def test_apimarket_refusal_points_to_the_store(api, monkeypatch):
     monkeypatch.delenv("RAPIDAPI_KEY")
     monkeypatch.setenv("API_MARKET_KEY", "mk")
     api.queue(403, {"message": "no"})
-    with pytest.raises(ToolError, match="api.market/store/hybrid-forge-lab/specwise"):
+    with pytest.raises(ToolError, match="api.market/store/bytestay/specwise"):
         await call(P, "GET", "/x")
 
 
