@@ -7,6 +7,11 @@ name: MCP registry
 on:
   workflow_call:
   workflow_dispatch:
+    inputs:
+      deprecate_to:
+        description: "Instead of publishing, mark every version deprecated and point to this server (e.g. io.github.Bytestay/distill-mcp)"
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -39,4 +44,15 @@ jobs:
       - name: Authenticate to the MCP registry
         run: ./mcp-publisher login github-oidc
       - name: Publish
+        if: ${{ !inputs.deprecate_to }}
         run: ./mcp-publisher publish
+      - name: Deprecate every version (moved to ByteStay)
+        if: ${{ inputs.deprecate_to }}
+        env:
+          DEPRECATE_TO: ${{ inputs.deprecate_to }}
+        run: |
+          set -euo pipefail
+          name="$(jq -r .name server.json)"
+          pkg="$(jq -r '.packages[0].identifier' server.json)"
+          ./mcp-publisher status --status deprecated --all-versions --yes \
+            --message "Moved to $DEPRECATE_TO (PyPI: ${pkg/hybridforgelab-/bytestay-})" "$name"
