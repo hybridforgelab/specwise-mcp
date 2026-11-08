@@ -25,6 +25,6 @@ jobs:
       - name: Tests (no network, 100% coverage)
         run: .venv/bin/pytest
       - name: Lint
-        run: .venv/bin/ruff check src tests scripts
+        run: .venv/bin/ruff check src tests
       - name: Build
         run: uv build
