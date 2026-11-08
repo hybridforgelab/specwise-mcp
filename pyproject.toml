@@ -1,35 +1,38 @@
 [project]
 name = "hybridforgelab-specwise-mcp"
-version = "0.2.3"
-description = "OpenAPI validation and breaking-change diffs (also against a git ref) and JSON Schema validation for coding agents. Bring your own RapidAPI or api.market key."
+version = "0.3.0"
+description = "Moved to bytestay-specwise-mcp. This package only installs bytestay-specwise-mcp and forwards to it."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
-authors = [{ name = "Hybrid Forge Lab", email = "hybridforgelab@gmail.com" }]
-dependencies = ["mcp>=2.3,<3", "httpx>=0.27"]
+authors = [{ name = "ByteStay", email = "hello@bytestay.pt" }]
+dependencies = ["bytestay-specwise-mcp>=0.2.4"]
+classifiers = [
+    "Development Status :: 7 - Inactive",
+    "Programming Language :: Python :: 3",
+]
 
 [project.urls]
-Homepage = "https://specwise.hybridforgelab.com"
-Repository = "https://github.com/hybridforgelab/specwise-mcp"
-Issues = "https://github.com/hybridforgelab/specwise-mcp/issues"
-Changelog = "https://github.com/hybridforgelab/specwise-mcp/blob/main/CHANGELOG.md"
+Homepage = "https://specwise.bytestay.pt"
+Repository = "https://github.com/Bytestay/specwise-mcp"
+"New package" = "https://pypi.org/project/bytestay-specwise-mcp/"
 
 [project.scripts]
-specwise-mcp = "specwise_mcp.server:main"
+specwise-mcp = "hybridforgelab_specwise_mcp:main"
+hybridforgelab-specwise-mcp = "hybridforgelab_specwise_mcp:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "pytest-asyncio>=0.24", "pytest-cov>=5", "ruff>=0.6"]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/specwise_mcp"]
+packages = ["src/hybridforgelab_specwise_mcp"]
 
 [tool.pytest.ini_options]
-asyncio_mode = "auto"
-addopts = "-q --cov=specwise_mcp --cov-report=term-missing:skip-covered --cov-fail-under=100"
+addopts = "-q --cov=hybridforgelab_specwise_mcp --cov-report=term-missing:skip-covered --cov-fail-under=100"
 testpaths = ["tests"]
 
 [tool.ruff]

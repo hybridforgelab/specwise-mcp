@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 (final)
+
+* Moved to [bytestay-specwise-mcp](https://pypi.org/project/bytestay-specwise-mcp/). This version only depends on it and forwards to it, with a notice on stderr.
+
 ## [0.2.3](https://github.com/hybridforgelab/specwise-mcp/compare/hybridforgelab-specwise-mcp-v0.2.2...hybridforgelab-specwise-mcp-v0.2.3) (2026-11-05)
 
 
